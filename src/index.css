@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+#country-select-demo-listbox ,ul[role='listbox']{
+    z-index: 9999;  
+}
+path{
+    pointer-events: none;
+}
+.MuiBox-root.css-y7qakx::-webkit-scrollbar {
+    width: 10px;
+  }
