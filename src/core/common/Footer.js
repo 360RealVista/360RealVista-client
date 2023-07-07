@@ -37,7 +37,7 @@ export default function Footer() {
         </ul>
         </div>
         <div className='bottom'>
-          <p >Copyright © Sonu | Designed by Sonu deshwal</p>
+          <p >Copyright © CentreLocus | Designed by CentreLocus</p>
         </div>
       </div>
     </Wrapper>
@@ -62,22 +62,25 @@ color: white;
 
   }
   .top{
-    padding-top: 140px ;
-    padding-bottom: 50px ;
     ul{
       display: flex;
       list-style: none;
       justify-content: space-between;
+      padding-top: 16px;
+
       &>li{
         display: flex;
         flex-direction: column;
         gap: 20px;
         .logo{
-          width: 100px;
-          margin-top: -46px;
+          padding-left: 50px;
         }
         .social{
           padding:10px 0;
+          align-items: center;
+          h4{
+            margin-top: -4px;
+          }
           div{
             padding:10px 0;
             display: flex;
@@ -85,17 +88,18 @@ color: white;
           }
         }
       }
-      &>.icon-text{
-        &>div{
-            display: flex;
-            gap: 30px;
-          }
-      }
     }
-
+    
   }
+  .icon-text{
+  &>div{
+      display: flex;
+      gap: 30px;
+    }
+}
   .bottom{
     padding: 20px 0;
+    padding-top: 0;
     border-top: 1px solid  #4E5683;
     p{
       text-align: center;
