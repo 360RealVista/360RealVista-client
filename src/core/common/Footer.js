@@ -20,54 +20,17 @@ export default function Footer() {
         <ul>
           <li>
             <img className='logo' src={email}/>
-            <p>Company: World's best Services</p>
-            <div className='social'>
+    
+          </li>
+
+          <li className='icon-text'>
+          <div className='social'>
               <h4>Follow us on</h4>
               <div>
                 <a href="#" className='link'><img src={instagram}/></a>
                 <a href="#" className='link'><img src={meta}/></a>
                 <a href="#" className='link'><img src={twitter}/></a>
                 <a href="#" className='link'><img src={linkedin}/></a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <Link className='link'>Link1</Link >
-            <Link className='link'>Link2</Link >
-            <Link className='link'>Link3</Link >
-            <Link className='link'>Link4</Link >
-          </li>
-          <li>
-            <Link className='link'>Careers</Link>
-            <Link className='link'>Terms & Conditions</Link>
-            <Link className='link'>Privacy Policy</Link>
-          </li>
-          <li className='icon-text'>
-            <div>
-              <div>
-                <img src={email}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={call}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={address}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
               </div>
             </div>
           </li>

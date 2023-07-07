@@ -1,7 +1,7 @@
 import axios from "axios"
 export const formSubmit=(data)=>{
       try {
-      return  axios.post("https://request360-versal-hosting.vercel.app/v1/api/request-form",data,{
+      return  axios.post("https://request360-server.vercel.app/v1/api/request-form",data,{
             headers:{
               "Content-Type":"application/json"
             }
