@@ -13,7 +13,6 @@ export default function Index() {
     <Banner/>
     <Company/>
     <WhatWeDo/>
-    <Company/>
     <Request360SiteVisit setOpen={setOpen}/>
     {/* modals */}
     <TransitionsModal open={open} setOpen={setOpen}/>

@@ -1,11 +1,13 @@
 import React from "react";
 import { styled } from "styled-components";
 import profile from "./../../../../assets/images/homepage/13330330_Feb-Business_9.jpg";
+import wave from "./../../../../assets/images/homepage/Rectangle 4.png"
 
 export default function WhatWeDo() {
   return (
     <>
       <Wrapper>
+        <div className="content-wrapper">
         <div className="text-wrapper">
           <button className="secondary-btn">What We Do</button>
           <h2>
@@ -55,6 +57,9 @@ export default function WhatWeDo() {
         <div className="img-wrapper">
           <img src={profile} />
         </div>
+        </div>
+       <img className="background" src={wave} alt="" />
+
       </Wrapper>
     </>
   );
@@ -64,13 +69,22 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   margin: auto;
-background-image: linear-gradient(to right, black,#320e2c);
+  background-image: url(${wave});
   display: flex;
   color: white;
+  padding: 50px 0;
+  .content-wrapper{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
   .img-wrapper {
-    width: 50%;
+    width: 35%;
     padding: 4vw;
     padding-left: 2vw;
+    display: flex;
+    align-items: center;
 
     img {
       width: 100%;
@@ -83,15 +97,12 @@ background-image: linear-gradient(to right, black,#320e2c);
   .text-wrapper {
     padding: 4vw;
     padding-right: 2vw;
-    width: 50%;
+    width: 65%;
     display: flex;
-
-    /* justify-content: space-between; */
     flex-direction: column;
     gap: 50px;
     h2 {
       font-weight: 400;
-      max-width: 800px;
       display: flex;
       gap: 12px;
       flex-direction: column;
@@ -125,5 +136,13 @@ background-image: linear-gradient(to right, black,#320e2c);
     .secondary-btn{
         color: white;
     }
+  }
+  .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
   }
 `;

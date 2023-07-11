@@ -1,14 +1,12 @@
 import React from "react";
 import { styled } from "styled-components";
-import background from "./../../../../assets/images/homepage/requirementButton.de5ea3e.avif"
-
 
 export default function Request360SiteVisit({setOpen}) {
   return (
     <>
       <Wrapper>
         <div>
-          <h2>Stand out and let us create your digital twin !</h2>
+          <h2>Stand out and let us <span> create your </span>digital twin !</h2>
           <button className="primary-btn" onClick={()=>setOpen(true)}>Book Now</button>
         </div>
       </Wrapper>
@@ -19,7 +17,6 @@ export default function Request360SiteVisit({setOpen}) {
 const Wrapper = styled.div`
   position: relative;
   width: 100vw;
-  background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)) , url(${background});
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -33,8 +30,15 @@ const Wrapper = styled.div`
     align-items: center;
     h2{
         font-size: 38px;
-        color: white;
+        color: black;
+        span{
+        color: #A14AF9;
+
+        }
     }
 
+  }
+  button{
+    margin-top: 0;
   }
 `;

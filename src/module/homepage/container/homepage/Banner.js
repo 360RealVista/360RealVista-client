@@ -1,30 +1,30 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import banner from "./../../../../assets/images/homepage/banner.avif"
+import banner from "./../../../../assets/images/homepage/home.png"
 
 
 export default function Banner() {
   return (
     <>
         <Wrapper>
-            <div className="left">
-                <div className="main">
-                    <h1>
-                    Stand out and let
-                    </h1>
-                    <h1>
-                    us   <span>create</span>your
-                    </h1>
-                    <h1>
-                    Digital <span>Twins</span> 
-                    </h1>
-                <button className='primary-btn'>Download Now</button>
-                </div>
-                
+            
+            <div className='top'>
+                <h1>
+                    <span>
+                Let Us Create Your
+                    </span>
+                    <span className='colored'>
+                    Digital Twins For
+                    </span>
+                    <span>
+                     You.
+                    </span>
+                </h1>
             </div>
-            <div className="right">
-                <img src={banner}/>
-            </div>
+            <img className='background' src={banner}/>
+   
+
+ 
         </Wrapper>
     
     </>
@@ -34,37 +34,41 @@ export default function Banner() {
 const Wrapper=styled.div`
 width: 100%;
 margin: auto;
-background-image: linear-gradient(to right, black,#320e2c);
-display: flex;
 position: relative;
 height: max-content;
-gap: 2vw;
-.left{
-    width: 50%;
-    align-items: center;
+height: 100vh;
+.top{
     display: flex;
-    justify-content: end;
-    /* padding-right: 100px; */
-    .main{
-        color:white;
-        h1{
-            font-weight: 300;
-            font-size: 5vw;
-            span{
-                font-weight: 600;
-            }
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 25vh;
+    h1{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 4vw;
+        span:nth-child(1){
+            font-size: 4.5vw;
             
-
         }
     }
-}
-.right{
-    width: 50%;
-    margin-top: 80px;
-    img{
-        width: 100%;
-        object-fit: contain;
+    .colored{
+        color: #A14AF9;
     }
 }
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-image: linear-gradient(to bottom ,black ,black);
+  }
+
+
 
 `

@@ -162,7 +162,7 @@ const companySizeList=["1-10 employees","11-50 employees","51-200 employees","20
 const CompanySize=()=>{
     return(
         <Autocomplete
-        placeholder="Governorate"
+        placeholder="Company size"
         options={companySizeList}
         sx={{ width: "100%" }}
         name="company_size"

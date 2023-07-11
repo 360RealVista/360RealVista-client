@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
-import logo from "./../../assets/images/homepage/logo.svg"
+import logo from "./../../assets/images/homepage/logo.png"
 import Request360Modal from "../../module/homepage/container/homepage/Request360Modal";
 
 
@@ -25,7 +25,7 @@ export default function HomepageNavbar() {
             <NavLink
               onClick={()=>setShowRequest360(true)}
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : true ? "active" : ""
+                isPending ? "pending" : true ? "primary-btn" : ""
               }
             >
               Request 360 Site Visit

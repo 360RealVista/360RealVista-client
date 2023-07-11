@@ -41,9 +41,12 @@ const Wrapper = styled.div`
   position: relative;
   margin: auto;
   display: flex;
+  max-width: 1440px;
   .img-wrapper {
     width: 50%;
     padding: 4vw;
+    display: flex;
+    align-items: center;
     img {
       width: 100%;
       object-fit: contain;
