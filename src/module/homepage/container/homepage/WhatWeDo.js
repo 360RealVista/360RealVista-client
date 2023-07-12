@@ -20,15 +20,20 @@ export default function WhatWeDo() {
               <br></br>
               <ul>
                 <li>
+                  <span/>
+
                   We create and share 3D digital twins of physical spaces.
                 </li>
                 <li>
+                <span/>
+
                   Our technology uses a combination of specialized 360-degree
                   cameras and artificial intelligence to create accurate and
                   immersive representations of real-world environments.
                 </li>
                 <li>
-                  {" "}
+                <span/>
+
                   We create 3D digital twins for a variety of businesses and
                   organizations, including real estate agents, architects,
                   manufacturers, residential and commercial construction sites,
@@ -37,10 +42,14 @@ export default function WhatWeDo() {
                   attractions, and more.
                 </li>
                 <li>
+                <span/>
+
                   We offer in-depth analytics, annotation features, multimedia
                   links, and virtual reality integration.
                 </li>
                 <li>
+                <span/>
+
                   We are a growing company with a lot of potential. We believe
                   that our technology has the power to revolutionize the way we
                   interact with the built world.
@@ -71,7 +80,7 @@ const Wrapper = styled.div`
   margin: auto;
   background-image: url(${wave});
   display: flex;
-  color: white;
+  color: black;
   padding: 50px 0;
   .content-wrapper{
     max-width: 1440px;
@@ -116,12 +125,16 @@ const Wrapper = styled.div`
       list-style: none;
       padding: 20px;
       li {
+        display: flex;
         padding-left: 20px;
         position: relative;
         /* padding-bottom: 20px; */
         font-size: 16px;
       }
-      li::before {
+      span{
+        margin-top: -5px;
+      }
+      span::before {
           content: "";
           height: 6px;
           width: 6px;
@@ -129,12 +142,12 @@ const Wrapper = styled.div`
           margin-left:10px ;
           margin-right:10px ;
           border-radius: 50%;
-          background-color: white;
+          background-color: black;
 
         }
     }
     .secondary-btn{
-        color: white;
+        color: black;
     }
   }
   .background{
