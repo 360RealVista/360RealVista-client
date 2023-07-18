@@ -68,6 +68,7 @@ padding: 0 10px 92px 10px;
             max-width: 1030px;
             width: 100%;
             margin: auto;
+            margin-bottom: 20px;
         }
     }
     .content::-webkit-scrollbar {
