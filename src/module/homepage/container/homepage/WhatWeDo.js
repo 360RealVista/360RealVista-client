@@ -110,7 +110,6 @@ const Wrapper = styled.div`
         display: flex;
         padding-left: 20px;
         position: relative;
-        /* padding-bottom: 20px; */
         font-size: 16px;
       }
       span{
@@ -147,6 +146,9 @@ const Wrapper = styled.div`
       }
       .text-wrapper{
         width: 100%;
+        li{
+          padding-left: 0 !important;
+        }
       }
   }
   @media screen and (max-width:768px) {
@@ -160,7 +162,20 @@ const Wrapper = styled.div`
       .text-wrapper{
         width: 100%;
         gap: 0;
+        ul{
+
+          padding-left: 5px !important;
+          li{
+            padding-left: 0 !important;
+          }
+        }
       }
     }
   }
+
+
+
+
 `;
+
+

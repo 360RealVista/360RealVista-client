@@ -153,6 +153,7 @@ padding-bottom: 92px;
     .text-wrapper{
       width: 100%;
       padding-right: 4vw ;
+
     }
   }
   .sub-title{
@@ -160,6 +161,7 @@ padding-bottom: 92px;
   }
   ul{
     border-radius: 10px !important;
+    padding: 10px 0 !important;
   }
   li{
     span{

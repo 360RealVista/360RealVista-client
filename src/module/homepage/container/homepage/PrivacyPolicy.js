@@ -119,4 +119,14 @@ const Wrapper = styled.div`
     width: 100%;
     z-index: -10;
   }
+
+  @media screen and (max-width:768px) {
+    ul{
+
+padding-left: 5px !important;
+li{
+  padding-left: 0 !important;
+}
+}
+  }
 `;
