@@ -16,9 +16,10 @@ outline: none !important;
 .primary-btn{
     border: none;
     outline: none;
-    padding: 16px 32px;
-    font-size: 18px;
+    padding: 1vw 32px;
+    font-size: calc(1vw + 12px);
     border-radius: 20px;
+    white-space: nowrap;
     background-color: #7634bf;
     color: white;
     font-weight: 600;
@@ -30,14 +31,14 @@ outline: none !important;
     border: none;
     outline: none;
     padding-bottom: 2px;
-    font-size: 18px;
     font-weight: 600;
     background-color: inherit;
     width: max-content;
-    font-size: 2.6vw;
+    font-size: calc(1.5vw + 20px);
     position: relative;
 
 }
+
 .secondary-btn::after{
     content: "";
     width: 20%;
@@ -52,4 +53,16 @@ outline: none !important;
     width: 90%;
 
 }
-
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    font-weight: 500;
+}
+@media screen and (max-width:768px) {
+    .secondary-btn{
+        margin-bottom: 30px;
+    }
+  }

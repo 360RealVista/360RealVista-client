@@ -73,7 +73,7 @@ export default function Request360Form({setOpen}) {
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
               <div>
-                <FormLabel>Company or Business Name</FormLabel>
+                <FormLabel>Company Name (if applicable) </FormLabel>
                 <Input name="company_name" sx={{'width':"300px"}} placeholder="Name" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
@@ -81,18 +81,18 @@ export default function Request360Form({setOpen}) {
 
             <div className="row">
               <div>
-                <FormLabel>Job Title</FormLabel>
-                <Input name="job_title" sx={{'width':"300px"}} placeholder="Title" />
-                {/* <FormHelperText>This is a helper text.</FormHelperText> */}
-              </div>
-              <div>
                 <FormLabel>Phone number</FormLabel>
                 <Input name="number" sx={{'width':"300px"}} placeholder="Number" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
+              <div>
+                <FormLabel>Job Title (if applicable)</FormLabel>
+                <Input name="job_title" sx={{'width':"300px"}} placeholder="Title" />
+                {/* <FormHelperText>This is a helper text.</FormHelperText> */}
+              </div>
             </div>
              <div className="row" style={{'flexDirection':'column'}}>
-            <FormLabel >Company Size</FormLabel>
+            <FormLabel >Company Size (if applicable)</FormLabel>
                 <CompanySize/>
             </div>
 
@@ -107,7 +107,7 @@ export default function Request360Form({setOpen}) {
             </div>}
 
             <div className="row"  style={{'flexDirection':'column'}}>
-            <FormLabel >Select Your Service</FormLabel>
+            <FormLabel >Select your sector (if applicable)</FormLabel>
                 <Services service={service} setService={setService}/>
             </div>
 
@@ -121,7 +121,7 @@ export default function Request360Form({setOpen}) {
 
             <div className="row">
             <div>
-                <FormLabel>Estimated size</FormLabel>
+                <FormLabel>Site estimated size (m2) </FormLabel>
                      <Input name="estimated_size[]" sx={{'width':"300px"}} placeholder="Size" />
                      {new Array(addField).fill("").map((_,index)=>{
                          return(
@@ -137,7 +137,7 @@ export default function Request360Form({setOpen}) {
 
                         )
                      })}
-                     <button type="button" className="primary-btn" style={{fontSize:12}} onClick={()=>setAddField(i=>i+1)}>Add Field</button>
+                     <button type="button" className="primary-btn" style={{fontSize:12}} onClick={()=>setAddField(i=>i+1)}>Add another site</button>
 
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
@@ -186,10 +186,10 @@ const Governorate=()=>{
 // governate component end
 
 // service component start
-const serviceList=['Government', 'Residential building', 'Commercial building',
-    'Industrial Plants', 'Construction Sites', 'Public Places', 'Car Showrooms', 'Hotels',
-    'Restaurants', 'Coffeeshops', 'Insurance Companies', 'Furniture Showroom',
-    'Education', 'Events', 'Others']
+const serviceList=[
+  "Industrial plants","Real Estate agency", "Hotels","Wedding & Meeting Halls","Car showrooms ","Universities & Colleges","Private Schools","Malls & Shopping Centers","Gyms & Fitness Centers","Restaurants & Coffee Shops","Real Estate (Individual) ","Government entity","Others"
+]
+    
 const Services=({service,setService})=>{
     return(
         <Autocomplete
@@ -285,4 +285,13 @@ const Wrapper = styled.div`
     padding: 8px 22px;
     border-radius: 10px;
   }
+  @media screen and (max-width:768px) {
+  
+  .row{
+    flex-direction: column !important;
+    &>div{
+      width: 100% !important;
+    }
+  }
+}
 `;

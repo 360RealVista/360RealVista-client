@@ -9,56 +9,38 @@ export default function WhatWeDo() {
       <Wrapper>
         <div className="content-wrapper">
         <div className="text-wrapper">
-          <button className="secondary-btn">What We Do</button>
+          <button className="secondary-btn">What Do We Do</button>
           <h2>
-            At 360 Real Vista, we bring physical spaces into the digital realm.{" "}
+          At 360 Real Vista, we bring physical spaces into the digital realm by creating 3D Virtual Tours.
             <br></br>
             <span>
-              The cuttingedge technology we use allows us to create immersive 3D
-              models of real-world environments, opening the door to a wide
-              range of applications:
+            The cutting-edge technology we use allows us to create immersive 3D models of real-world environments, opening the door to a wide range of applications:
               <br></br>
               <ul>
                 <li>
                   <span/>
 
-                  We create and share 3D digital twins of physical spaces.
+                  We create and share 3D Virtual Tour of physical spaces.
+
                 </li>
                 <li>
                 <span/>
 
-                  Our technology uses a combination of specialized 360-degree
-                  cameras and artificial intelligence to create accurate and
-                  immersive representations of real-world environments.
+                We generate 3D digital twins for a variety of businesses and organizations, including real estate agents, manufacturers, residential and commercial construction sites, public establishments like hotels, showrooms, retail stores, educational institutions, workplaces, event spaces, tourism attractions, and more.
                 </li>
                 <li>
                 <span/>
 
-                  We create 3D digital twins for a variety of businesses and
-                  organizations, including real estate agents, architects,
-                  manufacturers, residential and commercial construction sites,
-                  public establishments like hotels, showrooms, retail stores,
-                  educational institutions, workplaces, event spaces, tourism
-                  attractions, and more.
+                We offer in-depth analytics, annotation features such as tagging and labels, and multimedia links.
                 </li>
                 <li>
                 <span/>
 
-                  We offer in-depth analytics, annotation features, multimedia
-                  links, and virtual reality integration.
+                We are a growing company with a lot of potential. We believe that our technology has the power to revolutionize the way we interact with the built world.
                 </li>
-                <li>
-                <span/>
-
-                  We are a growing company with a lot of potential. We believe
-                  that our technology has the power to revolutionize the way we
-                  interact with the built world.
-                </li>
+            
               </ul>
-              Whether you want to offer virtual house tours, a retailer planning
-              your store layout, or an insurance company needing detailed
-              documentation, 360 Real Vista has the capabilities to
-              revolutionize your workflow and enhance your business operations.
+              Whether you are a manufacturer plant aiming to provide an immersive visual experience of your production facilities improve their maintenance reliability and training, or a real estate agent aiming to revolutionize your property showings, offering fully interactive 3D property tours, or 360 Real Vista has the capabilities to revolutionize your workflow and enhance your business marketing, operations, and integrity.
             </span>
           </h2>
           <h3></h3>
@@ -157,5 +139,28 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     z-index: -10;
+  }
+  @media screen and (max-width:1024px) and (min-width: 769px  ) {
+
+      .img-wrapper{
+        display: none !important;
+      }
+      .text-wrapper{
+        width: 100%;
+      }
+  }
+  @media screen and (max-width:768px) {
+    background: #d2dfff;
+    .content-wrapper{
+
+      flex-direction: column !important;
+      .img-wrapper{
+        width: 100%;
+      }
+      .text-wrapper{
+        width: 100%;
+        gap: 0;
+      }
+    }
   }
 `;

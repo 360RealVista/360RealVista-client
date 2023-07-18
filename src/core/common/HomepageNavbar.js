@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 import logo from "./../../assets/images/homepage/logo.png"
 import Request360Modal from "../../module/homepage/container/homepage/Request360Modal";
+import Sidebar from "./Sidebar";
 
 
 
@@ -12,15 +13,52 @@ export default function HomepageNavbar() {
   return (
     <>
       <Wrapper>
+        <div className="main">
+
+       
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
             true ? "pending" : isActive ? "active" : ""
           }
         >
-          <img src={logo} />
+          <img className="logo" src={logo} />
         </NavLink>
-        <ul>
+        <div className="sidebar">
+        <Sidebar   setShowRequest360={setShowRequest360}/>
+        </div>
+          
+        <ul className="webNavbar">
+          <li>
+            <NavLink
+             to="/"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+             to="Link2"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+             to="Link3"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Gallery
+            </NavLink>
+          </li>
           <li>
             <NavLink
               onClick={()=>setShowRequest360(true)}
@@ -28,35 +66,49 @@ export default function HomepageNavbar() {
                 isPending ? "pending" : true ? "primary-btn" : ""
               }
             >
-              Request 360 Site Visit
+              Book a 3D Tour Today !
             </NavLink>
           </li>
         </ul>
-
+        </div>
       </Wrapper>
+
       <Request360Modal open={showRequest360} setOpen={setShowRequest360}/>
 
 
     </>
+
   );
 }
 
 const Wrapper=styled.div`
-  max-width: 1198px;
-  margin:  auto;
-  padding: 20px 0;
-  justify-content: space-between;
-  display: flex;
-  background-color: transparent;
+  /* width: 100vw; */
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 99;
+  .main{
+    flex:1;
+    margin:  auto;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 1198px;
+
+  };
   ul{
+    flex:1;
     display: flex;
     list-style: none;
     align-items: center;
     position: relative;
+    max-width: 700px;
+    justify-content: space-between;
     &>li{
       margin: 0 20px;
       white-space: nowrap;
-      font-size: 24px;
+      font-size: 16px;
       font-weight: 600;
       &>a{
         color: white;
@@ -65,6 +117,10 @@ const Wrapper=styled.div`
       }      
 
     }
+  }
+  .primary-btn {
+  padding: 12px 26px;
+  font-size: calc(.8vw + 8px);
   }
 
   .active{
@@ -82,5 +138,23 @@ const Wrapper=styled.div`
     }
 
   }
+  .logo{
+    height: 80px;
+  }
+  .sidebar{
+    display: none;
+  }
+  @media screen and (max-width:768px) {
+    .sidebar{
+      display: flex !important;
+    }
+    .webNavbar{
+      display: none !important;
+    }
+    .logo{
+      height: 40px;
+      margin-left: 10px;
+    }
+}
 
 `

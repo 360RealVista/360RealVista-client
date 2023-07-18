@@ -16,19 +16,13 @@ export const HomepageRoutes=[
 export  function HomePageOutlet() {
   return (
     <>
-        <Main>
+
           <HomepageNavbar/>
-        </Main>
         <Outlet/>
         <Footer/>
     
     </>
   )
 }
-const Main=styled.div`
-position:absolute;
-top: 0;
-width: 100vw;
-z-index: 99;
-`
+
 

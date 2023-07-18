@@ -11,13 +11,13 @@ export default function Banner() {
             <div className='top'>
                 <h1>
                     <span>
-                Let Us Create Your
+                    Experience Spaces Like Never Before with  
                     </span>
                     <span className='colored'>
-                    Digital Twins For
+                    Our 3D Virtual
                     </span>
                     <span>
-                     You.
+                    Tours !
                     </span>
                 </h1>
             </div>
@@ -32,7 +32,7 @@ export default function Banner() {
 }
 
 const Wrapper=styled.div`
-width: 100%;
+/* width: 100%; */
 margin: auto;
 position: relative;
 height: max-content;
@@ -43,15 +43,16 @@ height: 100vh;
     justify-content: center;
     width: 100%;
     flex-direction: column;
-    padding-top: 25vh;
+    padding: 30vh 10px 0 10px;
     h1{
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 4vw;
+        font-size: calc(3vw + 12px);
         span:nth-child(1){
-            font-size: 4.5vw;
+            text-align: center;
+            font-size: calc(2.1vw + 12px);
             
         }
     }

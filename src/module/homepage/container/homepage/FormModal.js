@@ -6,6 +6,8 @@ import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Form from './Form';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 const style = {
   position: 'absolute',
@@ -42,8 +44,8 @@ export default function TransitionsModal({open,setOpen}) {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-
+            <Typography id="transition-modal-title" sx={{'display':"flex",'justifyContent':'space-between','alignItems':'center'}} variant="h6" component="h2">
+          <CloseIcon onClick={handleClose} />
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
              <Form setOpen={setOpen}/>

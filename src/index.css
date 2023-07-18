@@ -5,8 +5,8 @@
     font-family: 'Krub', sans-serif;
 }
 body{
-    width: 100vw;
-    overflow-x: hidden;
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
 }
 #country-select-demo-listbox ,ul[role='listbox']{
     z-index: 9999;  

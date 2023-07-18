@@ -1,8 +1,8 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import youtube from "./../../assets/images/homepage/youtube.png"
-import instagram from "./../../assets/images/homepage/instagram.png"
-import linkedin from "./../../assets/images/homepage/linkedin.png"
+import youtube from "./../../assets/images/common/icons8-youtube.svg"
+import instagram from "./../../assets/images/common/icons8-instagram.svg"
+import linkedin from "./../../assets/images/common/icons8-linkedin.svg"
 
 
 
@@ -33,7 +33,6 @@ export default function Footer() {
   )
 }
 const Wrapper=styled.div`
-width:100vw;
 position: relative;
 background-color: white;
 font-weight: 600;
@@ -63,6 +62,11 @@ font-weight: 600;
           align-items: center;
           a{
             padding:0 10px ;
+            img{
+              color: green !important;
+              height: 30px;
+
+            }
 
           }
         }
@@ -74,6 +78,19 @@ font-weight: 600;
     
   
 
+}
+
+@media screen and (max-width:768px) {
+ul{
+  flex-direction: column-reverse  ;
+  justify-content: center ;
+  align-items: center ;
+  gap: 20px;
+  li:nth-child(2){
+          transform: translate(0%, 0px) !important;
+        }
+
+}
 }
 
 

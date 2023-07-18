@@ -7,7 +7,7 @@ export default function Request360SiteVisit({setOpen}) {
       <Wrapper>
         <div>
           <h2>Stand out and let us <span> create your </span>digital twin !</h2>
-          <button className="primary-btn" onClick={()=>setOpen(true)}>Book Now</button>
+          <button className="primary-btn" onClick={()=>setOpen(true)}>Contact Us</button>
         </div>
       </Wrapper>
     </>
@@ -16,20 +16,19 @@ export default function Request360SiteVisit({setOpen}) {
 
 const Wrapper = styled.div`
   position: relative;
-  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 
   &>div{
-    padding: 60px;
+    padding: 4vw;
     max-width: 1196px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     h2{
-        font-size: 38px;
+        font-size: calc(1.5vw + 12px);
         color: black;
         span{
         color: #A14AF9;
@@ -40,5 +39,14 @@ const Wrapper = styled.div`
   }
   button{
     margin-top: 0;
-  }
+  }  
+
+  @media screen and (max-width:768px) {
+    &>div{
+      gap: 30px;
+      flex-direction: column !important;
+
+    }
+}
+
 `;
