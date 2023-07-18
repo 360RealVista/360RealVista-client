@@ -109,6 +109,7 @@ const Wrapper = styled.div`
         color: black;
         display: block;
         margin: auto;
+        margin-bottom: 30px;
     }
   }
   .background{
