@@ -67,7 +67,6 @@ const Wrapper = styled.div`
   .text-wrapper {
       display: flex;
     flex-direction: column;
-    gap: 50px;
     h2 {
       font-weight: 400;
       flex-direction: column;
@@ -76,7 +75,7 @@ const Wrapper = styled.div`
       
       &>div {
         /* font-weight: 500; */
-        font-size: calc(1.3vw + 8px);
+        font-size: calc(.6vw + 8px);
         text-align: justify;
       }
     }
@@ -87,7 +86,7 @@ const Wrapper = styled.div`
         display: flex;
         padding-left: 1vw;
         position: relative;
-        font-size: calc(.8vw + 8px);
+        font-size: calc(.4vw + 8px);
         padding-bottom: 10px;
       }
       span{
@@ -109,7 +108,7 @@ const Wrapper = styled.div`
         color: black;
         display: block;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 30px;//do not remove it as the production build need it
     }
   }
   .background{
@@ -122,6 +121,9 @@ const Wrapper = styled.div`
   }
 
   @media screen and (max-width:768px) {
+    .text-wrapper{
+      gap: 0 !important;
+    }
     ul{
 
 padding-left: 5px !important;

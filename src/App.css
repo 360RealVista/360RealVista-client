@@ -16,7 +16,7 @@ outline: none !important;
 .primary-btn{
     border: none;
     outline: none;
-    padding: 1vw 32px;
+    padding:.8vw 32px;
     font-size: calc(1vw + 12px);
     border-radius: 20px;
     white-space: nowrap;
@@ -34,14 +34,14 @@ outline: none !important;
     font-weight: 600;
     background-color: inherit;
     width: max-content;
-    font-size: calc(1.5vw + 20px);
+    font-size: calc(1.2vw + 20px);
     position: relative;
 
 }
 
 .secondary-btn::after{
     content: "";
-    width: 20%;
+    width: 60px;
     border-bottom:5px solid #7634bf;
     position: absolute;
     bottom: -4px;

@@ -5,7 +5,7 @@ import profile from "./../../../../assets/images/homepage/company-profile.jpg";
 export default function Company() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="CompanyProfile">
         <div className="img-wrapper">
           <img src={profile} />
         </div>

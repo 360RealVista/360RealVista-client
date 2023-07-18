@@ -13,6 +13,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
+import { scrollTOId } from '../utils';
 
 export default function Sidebar({setShowRequest360}) {
   const [state, setState] = React.useState({
@@ -37,14 +38,6 @@ export default function Sidebar({setShowRequest360}) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-                  {/* <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem> */}
           <Wrapper>
 
     <h2>Stand out and let us <span> create your </span>digital twin !</h2>
@@ -64,33 +57,33 @@ export default function Sidebar({setShowRequest360}) {
               <Divider/>
           <ListItem >
             <NavLink
-             to="/"
+             onClick={()=>scrollTOId("CompanyProfile",70)}
               className={({ isActive, isPending }) =>
                 isPending ? " link pending" : isActive ? " link active" : "link"
               }
             >
-              Home
+              Company Profile
             </NavLink>
           </ListItem>
 
           <ListItem>
             <NavLink
-             to="Link2"
+             onClick={()=>scrollTOId("whatDoWeDo",70)}
               className={({ isActive, isPending }) =>
                 isPending ? "pending link" : isActive ? "active link" : "link"
               }
             >
-              Blog
+              What Do We Do
             </NavLink>
           </ListItem>
           <ListItem>
             <NavLink
-             to="Link3"
+             onClick={()=>scrollTOId("benefits",70)}
               className={({ isActive, isPending }) =>
-                isPending ? "pending link" : isActive ? "active link" : "link"
+                isPending ? "pending link" : !isActive ? "active link" : "link"
               }
             >
-              Gallery
+              Benefits
             </NavLink>
           </ListItem>
 

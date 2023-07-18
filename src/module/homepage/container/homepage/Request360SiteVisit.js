@@ -28,7 +28,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     h2{
-        font-size: calc(1.5vw + 12px);
+        font-size: calc(1.1vw + 12px);
         color: black;
         span{
         color: #A14AF9;
@@ -39,6 +39,8 @@ const Wrapper = styled.div`
   }
   button{
     margin-top: 0;
+    font-weight: 500;
+    font-size: calc(.8vw + 12px);
   }  
 
   @media screen and (max-width:768px) {

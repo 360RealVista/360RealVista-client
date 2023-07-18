@@ -13,7 +13,7 @@ export default function AskedQuestions() {
   return (
     <Wrapper>
         <div className="main">
-        <button className='secondary-btn'>Frequently Asked Questions</button>
+        <button className='secondary-btn'>FAQ</button>
             <div className="content">
                 {faqList.map(ele=>(
                     <div className="accordian" >
@@ -78,6 +78,10 @@ padding: 0 10px 92px 10px;
             background-color: red;
         } */
 }
+.secondary-btn{
+    display: block;
+    margin: auto;
+}
 
  .sub-title{
             font-size: calc(1.5vw + 20px);
@@ -104,11 +108,7 @@ padding: 0 10px 92px 10px;
 }
 .css-o4b71y-MuiAccordionSummary-content{
     margin: 0 !important;
-
 }
-
-
-
 `
 
 

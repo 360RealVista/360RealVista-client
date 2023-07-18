@@ -4,20 +4,21 @@ import { styled } from "styled-components";
 import logo from "./../../assets/images/homepage/logo.png"
 import Request360Modal from "../../module/homepage/container/homepage/Request360Modal";
 import Sidebar from "./Sidebar";
+import { scrollTOId } from "../utils";
 
 
 
 export default function HomepageNavbar() {
   const [showRequest360, setShowRequest360] = React.useState(false);
 
+
+
   return (
     <>
       <Wrapper>
         <div className="main">
-
        
         <NavLink
-          to="/"
           className={({ isActive, isPending }) =>
             true ? "pending" : isActive ? "active" : ""
           }
@@ -31,32 +32,32 @@ export default function HomepageNavbar() {
         <ul className="webNavbar">
           <li>
             <NavLink
-             to="/"
+              onClick={()=>scrollTOId("CompanyProfile",70)}
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : !isActive ? "active" : ""
               }
             >
-              Home
+              Company Profile
             </NavLink>
           </li>
           <li>
             <NavLink
-             to="Link2"
+             onClick={()=>scrollTOId("whatDoWeDo",70)}
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : !isActive ? "active" : ""
               }
             >
-              Blog
+              What Do We Do
             </NavLink>
           </li>
           <li>
             <NavLink
-             to="Link3"
+             onClick={()=>scrollTOId("benefits",70)}
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : !isActive ? "active" : ""
               }
             >
-              Gallery
+              Benefits
             </NavLink>
           </li>
           <li>

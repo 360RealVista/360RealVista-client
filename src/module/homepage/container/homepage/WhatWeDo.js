@@ -6,7 +6,7 @@ import wave from "./../../../../assets/images/homepage/Rectangle 4.png"
 export default function WhatWeDo() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="whatDoWeDo">
         <div className="content-wrapper">
         <div className="text-wrapper">
           <button className="secondary-btn">What Do We Do</button>

@@ -51,6 +51,11 @@ const Wrapper = styled.div`
     }
 
   }
+  .secondary-btn{
+    display: block;
+    margin: auto;
+  }
+
   @media screen and (max-width:768px) {
   
   .text-wrapper{

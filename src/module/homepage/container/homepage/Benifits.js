@@ -27,7 +27,7 @@ const BenifitsData=[
 export default function Benifits() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="benefits">
         <div className="text-wrapper">
           <button className="secondary-btn">Benefits</button>
           <div className="row">
@@ -72,7 +72,7 @@ const Wrapper = styled.div`
   }
   .secondary-btn{
     display: block;
-    margin-left: auto;
+    margin: auto;
   }
   @media screen and (max-width:768px) {
   
