@@ -152,10 +152,19 @@ padding-bottom: 92px;
     }
     .text-wrapper{
       width: 100%;
+      padding-right: 4vw ;
     }
   }
   .sub-title{
     margin-bottom: 10px !important;
+  }
+  ul{
+    border-radius: 10px !important;
+  }
+  li{
+    span{
+      display: none !important;
+    }
   }
 }
 
