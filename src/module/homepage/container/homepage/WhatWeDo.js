@@ -97,7 +97,7 @@ const Wrapper = styled.div`
       display: flex;
       gap: 12px;
       flex-direction: column;
-      font-size: 30px;
+      font-size: calc(1.5vw + 12px);
       span {
         font-weight: 300;
         font-size: 18px;
