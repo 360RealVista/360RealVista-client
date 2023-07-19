@@ -17,7 +17,7 @@ import { useMutation } from "react-query";
 export default function Request360Form({setOpen}) {
 
 
-    const {mutate}=useMutation("postForm",contactUsFormSubmit,{
+    const {mutate}=useMutation("contactUsFormSubmit",contactUsFormSubmit,{
       onSuccess:()=>{
         setOpen(false)
       },
