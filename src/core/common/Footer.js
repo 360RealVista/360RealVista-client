@@ -3,6 +3,9 @@ import { styled } from 'styled-components'
 import youtube from "./../../assets/images/common/icons8-youtube.svg"
 import instagram from "./../../assets/images/common/icons8-instagram.svg"
 import linkedin from "./../../assets/images/common/icons8-linkedin.svg"
+import meta from "./../../assets/images/common/icons8-facebook.svg"
+import twitter from "./../../assets/images/common/icons8-twitter.svg"
+import { scrollTOId } from '../utils'
 
 
 
@@ -16,15 +19,18 @@ export default function Footer() {
           <li>
             © 2023  360 Real Vista All rights reserved.
           </li>
-          <li>
+          <li onClick={()=>scrollTOId("privacyPolicy",70)}>
+
           Privacy Policy
           </li>
 
           <li className='icon-text'>
           <div className='social'>
-                <a href="#" className='link'><img src={instagram}/></a>
-                <a href="#" className='link'><img src={youtube}/></a>
-                <a href="#" className='link'><img src={linkedin}/></a>
+                <a href="https://twitter.com/360RealVista" target='_blank' className='link'><img src={twitter}/></a>
+                <a href="https://www.linkedin.com/company/360-real-vista" target='_blank'className='link'><img src={linkedin}/></a>
+                <a href="https://www.facebook.com/profile.php?id=100094343658163 " target='_blank' className='link'><img src={meta}/></a>
+                <a href="#" target='_blank' className='link'><img src={instagram}/></a>
+                <a href="https://youtube.com/@360RealVista" target='_blank' className='link'><img src={youtube}/></a>
             </div>
           </li>
         </ul>

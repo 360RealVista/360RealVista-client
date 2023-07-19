@@ -40,7 +40,8 @@ export default function Sidebar({setShowRequest360}) {
     >
           <Wrapper>
 
-    <h2>Stand out and let us <span> create your </span>digital twin !</h2>
+    <h2>Stand out and let us <span> create your </span>3D Virtual Tour ! 
+</h2>
          
 
       <List>
@@ -51,7 +52,7 @@ export default function Sidebar({setShowRequest360}) {
                 isPending ? "pending link" : true ? "primary-btn link" : "link"
               }
             >
-              Book a 3D Tour
+              Request 3D Tour !
             </NavLink>
           </ListItem>
               <Divider/>

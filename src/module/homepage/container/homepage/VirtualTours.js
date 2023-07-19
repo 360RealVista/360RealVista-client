@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import profile from "../../../../assets/images/homepage/Macbook Pro.png"
+import profile from "../../../../assets/images/homepage/Lid.png"
 
 export default function VirtualTours() {
   return (
@@ -63,6 +63,7 @@ padding-bottom: 92px;
 .img-wrapper {
     width: 50%;
     padding-left: 2vw;
+    padding-right: 2vw;
     display: flex;
     align-items: center;
 
@@ -70,8 +71,8 @@ padding-bottom: 92px;
     img {
       width: 100%;
       object-fit: cover;
-      border-radius: 20px;
-      max-height: 600px;
+      border-radius: 25px;
+      /* max-height: 500px; */
 
     }
   }
@@ -132,7 +133,7 @@ padding-bottom: 92px;
     }
   }
  .sub-title{
-            font-size: calc(1.5vw + 12px);
+            font-size: calc(1.2vw + 12px);
             text-align: center;
             margin: auto;
             max-width: 850px;

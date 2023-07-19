@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import profile from "./../../../../assets/images/homepage/13330330_Feb-Business_9.jpg";
+import profile from "./../../../../assets/images/homepage/2023-07-19 16_10_52-Greenshot.jpg";
 import wave from "./../../../../assets/images/homepage/Rectangle 4.png"
 
 export default function WhatWeDo() {
@@ -20,27 +20,28 @@ export default function WhatWeDo() {
                 <li>
                   <span/>
 
-                  We create and share 3D Virtual Tour of physical spaces.
+                  We generate 3D Virtual Tour of physical spaces with Guided Tour, Labels, Notes, and Tags.
+
 
                 </li>
                 <li>
                 <span/>
 
-                We generate 3D digital twins for a variety of businesses and organizations, including real estate agents, manufacturers, residential and commercial construction sites, public establishments like hotels, showrooms, retail stores, educational institutions, workplaces, event spaces, tourism attractions, and more.
+                We generate 3D models that are accessible on any device with an internet connection, no software required.
                 </li>
                 <li>
                 <span/>
 
-                We offer in-depth analytics, annotation features such as tagging and labels, and multimedia links.
+                We provide a link that is can be shared on all social media platforms.
                 </li>
                 <li>
                 <span/>
 
-                We are a growing company with a lot of potential. We believe that our technology has the power to revolutionize the way we interact with the built world.
+                We provide a QR code that can be easily shared and scanned.
                 </li>
             
               </ul>
-              Whether you are a manufacturer plant aiming to provide an immersive visual experience of your production facilities improve their maintenance reliability and training, or a real estate agent aiming to revolutionize your property showings, offering fully interactive 3D property tours, or 360 Real Vista has the capabilities to revolutionize your workflow and enhance your business marketing, operations, and integrity.
+              Whether you are an industrial plant aiming to improve their maintenance reliability and production, or a business owner aiming to revolutionize your customer experience, we have the capabilities to revolutionize your workflow and enhance your business marketing, operations, and integrity.
             </span>
           </h2>
           <h3></h3>
@@ -71,9 +72,10 @@ const Wrapper = styled.div`
     position: relative;
   }
   .img-wrapper {
-    width: 35%;
+    width: 40%;
     padding: 4vw;
     padding-left: 2vw;
+    padding-right: 2vw;
     display: flex;
     align-items: center;
 
@@ -81,14 +83,14 @@ const Wrapper = styled.div`
       width: 100%;
       object-fit: cover;
       border-radius: 20px;
-      max-height: 600px;
+      /* max-height: 600px; */
 
     }
   }
   .text-wrapper {
     padding: 4vw;
     padding-right: 2vw;
-    width: 65%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 50px;

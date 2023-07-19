@@ -10,17 +10,17 @@ const BenifitsData=[
   {
   img:customer,
   title:"Increased Accessibility",
-  para:"With 3D virtual tours, geographical barriers are eliminated. Customers can explore your business's spaces from anywhere in the world, at any time"
+  para:"Offering 3D virtual tours can reduce team travel by 50% while increasing productivity by 30%.”"
   },
   {
     img:free,
-    title:"Competitive Advantage",
+    title:"Increasing Productivity",
     para:"Offering 3D virtual tours can set your business apart from competitors. It showcases your commitment to leveraging advanced technology for customer convenience."
   },
   {
-    img:free,
-    title:"Enhanced Customer Experience",
-    para:"3D virtual tours provide an immersive and interactive experience, allowing customers to explore spaces in detail from any angle."
+    img:flight,
+    title:"Increase Sales",
+    para:"Capturing and promoting your business can increase your sales by 14% with 3X online engagement. "
   },
 ]
 
@@ -66,6 +66,9 @@ const Wrapper = styled.div`
       position: relative;
       &>div{
         width: 30%;
+        h2{
+          text-align: center;
+        }
       }
     }
 

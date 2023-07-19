@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import profile from "./../../../../assets/images/homepage/company-profile.jpg";
+import profile from "./../../../../assets/images/homepage/Live-GIF_V2-smaller_big text.gif";
 
 export default function Company() {
   return (
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
       display: flex;
       gap: 12px;
       flex-direction: column;
-      font-size: calc(1.5vw + 12px);
+      font-size: calc(1.2vw + 12px);
       span {
         font-weight: 300;
         font-size: calc(.5vw + 12px);

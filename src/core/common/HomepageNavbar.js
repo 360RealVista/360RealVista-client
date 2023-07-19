@@ -67,7 +67,7 @@ export default function HomepageNavbar() {
                 isPending ? "pending" : true ? "primary-btn" : ""
               }
             >
-              Book a 3D Tour Today !
+              Request a 3D Virtual Tour !
             </NavLink>
           </li>
         </ul>
@@ -140,7 +140,8 @@ const Wrapper=styled.div`
 
   }
   .logo{
-    height: 80px;
+    height: 100px;
+    margin-left: 40px;
   }
   .sidebar{
     display: none;
@@ -153,8 +154,8 @@ const Wrapper=styled.div`
       display: none !important;
     }
     .logo{
-      height: 40px;
-      margin-left: 10px;
+      height: 50px;
+      margin-left: 20px;
     }
 }
 

@@ -24,7 +24,7 @@ export default function Index() {
     <WhatWeDo/>
     <Youtube/>
     <Benifits/>
-    <Testimonials/>
+    {/* <Testimonials/> */}
     <FAQ/>
     <PrivacyPolicy/>
     <FloatingWhatsapp/>

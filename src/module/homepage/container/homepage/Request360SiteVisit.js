@@ -6,7 +6,7 @@ export default function Request360SiteVisit({setOpen}) {
     <>
       <Wrapper>
         <div>
-          <h2>Stand out and let us <span> create your </span>digital twin !</h2>
+          <h2>Stand out and let us <span> create your </span>3D Virtual Tour !</h2>
           <button className="primary-btn" onClick={()=>setOpen(true)}>Contact Us</button>
         </div>
       </Wrapper>
@@ -39,8 +39,8 @@ const Wrapper = styled.div`
   }
   button{
     margin-top: 0;
-    font-weight: 500;
-    font-size: calc(.8vw + 12px);
+    font-weight: 600;
+    font-size: calc(.9vw + 12px);
   }  
 
   @media screen and (max-width:768px) {

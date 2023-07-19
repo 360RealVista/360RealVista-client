@@ -5,7 +5,7 @@ import whatapp from "../../assets/images/common/icons8-whatsapp.svg"
 export default function FloatingWhatsapp() {
   return (
       <>
-       <Wrapper href="tel:+968 9199 8781 ">
+       <Wrapper href="https://wa.me/+96891998781">
             <img src={whatapp} />
        </Wrapper>
     </>

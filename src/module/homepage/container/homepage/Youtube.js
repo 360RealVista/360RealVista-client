@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     }
     .iframe{
       border: 5px solid #E8D0FF;
-      border-top: 50px solid #E8D0FF;
+      /* border-top: 50px solid #E8D0FF; */
       border-radius: 10px;
 
 

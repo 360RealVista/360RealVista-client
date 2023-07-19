@@ -6,7 +6,7 @@ import wave from "./../../../../assets/images/homepage/Rectangle 4.png"
 export default function PrivacyPolicy() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="privacyPolicy">
         <div className="content-wrapper">
         <div className="text-wrapper">
           <button className="secondary-btn">Privacy Policy</button>
