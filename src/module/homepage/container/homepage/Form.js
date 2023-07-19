@@ -11,13 +11,13 @@ import ListItemContent from '@mui/joy/ListItemContent';
 import Typography from '@mui/joy/Typography';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import {  toast } from 'react-toastify';
-import { formSubmit } from "../../../../request-API/postRequest";
+import { contactUsFormSubmit } from "../../../../request-API/postRequest";
 import { useMutation } from "react-query";
 
 export default function Request360Form({setOpen}) {
 
 
-    const {mutate}=useMutation("postForm",formSubmit,{
+    const {mutate}=useMutation("postForm",contactUsFormSubmit,{
       onSuccess:()=>{
         setOpen(false)
       },
@@ -52,7 +52,7 @@ export default function Request360Form({setOpen}) {
               </div>
               <div>
                 <FormLabel>Email</FormLabel>
-                <Input required name="company_name" type="email" sx={{'width':"300px"}} placeholder=" Enter Your Email" />
+                <Input required name="email" type="email" sx={{'width':"300px"}} placeholder=" Enter Your Email" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
             </div>
@@ -60,19 +60,19 @@ export default function Request360Form({setOpen}) {
             <div className="row">
               <div>
                 <FormLabel>Phone</FormLabel>
-                <Input required name="job_title" sx={{'width':"300px"}} placeholder=" Enter Your Phone" />
+                <Input required name="phone" sx={{'width':"300px"}} placeholder=" Enter Your Phone" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
               <div>
                 <FormLabel>Subject</FormLabel>
-                <Input required name="number" sx={{'width':"300px"}} placeholder="Enter Your Subject" />
+                <Input required name="subject" sx={{'width':"300px"}} placeholder="Enter Your Subject" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
               </div>
             </div>
             <div className="row" style={{'flexDirection':'column'}}>
               
                 <FormLabel>Message</FormLabel>
-                <Input required name="job_title" sx={{'width':"100%", 'height':'80px'}} placeholder="Enter Your Message" />
+                <Input required name="message" sx={{'width':"100%", 'height':'80px'}} placeholder="Enter Your Message" />
                 {/* <FormHelperText>This is a helper text.</FormHelperText> */}
         
     

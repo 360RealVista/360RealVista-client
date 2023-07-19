@@ -12,3 +12,16 @@ export const formSubmit=(data)=>{
       }
     
 } 
+export const contactUsFormSubmit=(data)=>{
+      try {
+      return  axios.post("https://request360-server.vercel.app/v1/api/contact-us",data,{
+            headers:{
+              "Content-Type":"application/json"
+            }
+          })
+        
+      } catch (error) {
+        console.log(error.message)
+      }
+    
+} 
