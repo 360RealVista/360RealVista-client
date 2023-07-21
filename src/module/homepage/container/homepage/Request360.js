@@ -14,6 +14,7 @@ import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useMutation } from "react-query";
 import { formSubmit } from "../../../../request-API/postRequest";
+import ThankyouScreen from "../../../../core/common/ThankyouScreen";
 
 export default function Request360Form({setOpen}) {
     const [country, setcountry] = React.useState(null);
@@ -21,13 +22,16 @@ export default function Request360Form({setOpen}) {
     const [service, setService] = React.useState(null);
     const [otherService, setOtherService] = React.useState(null);
     const [addField, setAddField] = React.useState(0);
+    const [isShowThanku, setIsShowThanku] = React.useState(true);
+
 
 
   const {mutate}=useMutation("postForm",formSubmit,{
     onSuccess:()=>{
-      setOpen(false)
+      // setOpen(false)
       toast("Thanks for submitting.");
       toast("Our Team will connect to you very soon ");
+      setIsShowThanku(true)
 
     },
     onError:(err)=>{
@@ -65,8 +69,18 @@ export default function Request360Form({setOpen}) {
 
   return (
     <>
+    {
+      isShowThanku?
+      <>
+        <ThankyouScreen close={setOpen}/>
+      </>
+      :
+      <>
       <Wrapper>
         <FormControl>
+          <Typography sx={{fontSize:"22px",marginBottom:"40px",marginTop:"-40px"}}>
+        Request 360 Site Visit
+          </Typography>
           <form onSubmit={submitHandler}>
             <div className="row">
               <div>
@@ -154,6 +168,9 @@ export default function Request360Form({setOpen}) {
           </form>
         </FormControl>
       </Wrapper>
+      </>
+    }
+    
     </>
   );
 }

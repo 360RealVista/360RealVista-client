@@ -47,8 +47,8 @@ export default function Request360Modal({open,setOpen}) {
           <Box sx={style}>
 
             <Typography sx={{'display':"flex",'justifyContent':'space-between','alignItems':'center'}} id="transition-modal-title" variant="h6" component="h2">
-            Request 360 Site Visit
-          <CloseIcon sx={{'marginTop':'-40px'}} onClick={handleClose} />
+            
+          <CloseIcon sx={{marginLeft:"auto"}} onClick={handleClose} />
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
              <Request360Form setOpen={setOpen}/>

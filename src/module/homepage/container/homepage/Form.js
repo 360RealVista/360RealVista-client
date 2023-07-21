@@ -13,15 +13,21 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import {  toast } from 'react-toastify';
 import { contactUsFormSubmit } from "../../../../request-API/postRequest";
 import { useMutation } from "react-query";
+import ThankyouScreen from "../../../../core/common/ThankyouScreen";
+
+
 
 export default function Request360Form({setOpen}) {
-
+  
+  const [isShowThanku, setIsShowThanku] = React.useState(false);
 
     const {mutate}=useMutation("contactUsFormSubmit",contactUsFormSubmit,{
       onSuccess:()=>{
-        setOpen(false)
+        // setOpen(false)
         toast("Thanks for submitting.");
         toast("Our Team will connect to you very soon ");
+      setIsShowThanku(true)
+
       },
       onError:(err)=>{
         toast(err.response.data.message)
@@ -43,6 +49,13 @@ export default function Request360Form({setOpen}) {
 
   return (
     <>
+      {
+      isShowThanku?
+      <>
+        <ThankyouScreen close={setOpen}/>
+      </>
+      :
+      <>
       <Wrapper>
         <FormControl>
           <form onSubmit={submitHandler}>
@@ -84,6 +97,8 @@ export default function Request360Form({setOpen}) {
           </form>
         </FormControl>
       </Wrapper>
+      </>
+      }
     </>
   );
 }
