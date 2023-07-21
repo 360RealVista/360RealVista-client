@@ -1,43 +1,46 @@
 import React from "react";
 import { styled } from "styled-components";
-import BenifitsCard from "../../../../core/common/BenifitsCard";
-import customer from "./../../../../assets/images/common/Customer_caring.png"
-import free from "./../../../../assets/images/common/free_icon_1 (2) 1.png"
-import flight from "./../../../../assets/images/common/Layer 24.png"
-
+import StaticsCard from "../../../../core/common/StaticsCard";
 
 const BenifitsData=[
   {
-  img:customer,
-  title:"Increased Accessibility",
-  para:"Offering 3D virtual tours can reduce team travel by 50% while increasing productivity by 30%.”"
+  title:"Increase sales",
+  stats:"14%",
+  para:"by inspiring more customers to visit your property."
   },
   {
-    img:free,
-    title:"Increasing Productivity",
-    para:"Offering 3D virtual tours can set your business apart from competitors. It showcases your commitment to leveraging advanced technology for customer convenience."
+  title:"Decrease travel time and cost",
+  stats:"50%",
+  para:"by removing the need for site visits."
   },
   {
-    img:flight,
-    title:"Increase Sales",
-    para:"Capturing and promoting your business can increase your sales by 14% with 3X online engagement. "
+  title:"Cut project time",
+  stats:"30%",
+  para:"by letting teams access a property anytime—anywhere."
   },
+  {
+  title:"Reduce carbon emissions",
+  stats:"16%",
+  para:"by eliminating the need for car and plane travel to operate more sustainably."
+  },
+
 ]
 
-export default function Benifits() {
+export default function Statics() {
   return (
     <>
       <Wrapper id="benefits">
         <div className="text-wrapper">
-          <button className="secondary-btn">Benefits</button>
+          <button className="secondary-btn">3D Virtual Tour In Statistics</button>
           <div className="row">
             {
               BenifitsData.map(ele=>(
                 <div>
-                  <BenifitsCard img={ele?.img} title={ele.title} para={ele.para} />
+                  <StaticsCard {...ele} />
                 </div>
               ))
             }
+ 
           </div>
         </div>
       </Wrapper>
@@ -50,6 +53,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   background-image: linear-gradient(to bottom ,#cdb2fa,white);
+  margin-top: 40px;
   
   .text-wrapper {
     margin: auto;

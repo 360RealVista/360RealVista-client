@@ -21,15 +21,17 @@ export default function Request360Form({setOpen}) {
     const [service, setService] = React.useState(null);
     const [otherService, setOtherService] = React.useState(null);
     const [addField, setAddField] = React.useState(0);
-    toast.success("error.name");
 
 
   const {mutate}=useMutation("postForm",formSubmit,{
     onSuccess:()=>{
       setOpen(false)
+      toast("Thanks for submitting.");
+      toast("Our Team will connect to you very soon ");
+
     },
     onError:(err)=>{
-      alert(err.response.data.message)
+      toast(err.response.data.message)
     }
   })
 

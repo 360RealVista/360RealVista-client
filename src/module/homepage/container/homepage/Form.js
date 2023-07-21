@@ -20,9 +20,11 @@ export default function Request360Form({setOpen}) {
     const {mutate}=useMutation("contactUsFormSubmit",contactUsFormSubmit,{
       onSuccess:()=>{
         setOpen(false)
+        toast("Thanks for submitting.");
+        toast("Our Team will connect to you very soon ");
       },
       onError:(err)=>{
-        alert(err.response.data.message)
+        toast(err.response.data.message)
       }
     })
 

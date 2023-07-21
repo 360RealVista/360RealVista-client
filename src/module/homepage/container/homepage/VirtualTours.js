@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import profile from "../../../../assets/images/homepage/Lid.png"
+import profile from "./../../../../assets/images/homepage/Live-GIF_V2-smaller_big text.gif";
+
 
 export default function VirtualTours() {
   return (
@@ -83,16 +84,17 @@ padding-bottom: 92px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-        span {
-          font-weight: 400;
-          display: flex;
-          gap: 12px;
-          flex-direction: column;
-          font-size: 30px;
-        font-weight: 300;
-        font-size: 18px;
+    span {
+      font-weight: 400;
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      font-size: 30px;
+      font-weight: 300;
+      font-size: 18px;
     }
     ul {
+      box-shadow: 0 0 10px 5px white;
       list-style: none;
       padding: 20px;
       border-radius: 50px;

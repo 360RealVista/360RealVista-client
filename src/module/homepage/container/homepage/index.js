@@ -12,6 +12,7 @@ import Benifits from './Benifits'
 import VirtualTours from './VirtualTours'
 import FloatingWhatsapp from '../../../../core/common/FloatingWhatsapp'
 import { styled } from 'styled-components'
+import Statics from './Statics'
 
 export default function Index() {
   const [open, setOpen] = React.useState(false);
@@ -22,6 +23,7 @@ export default function Index() {
     <VirtualTours/>
     <Company/>
     <WhatWeDo/>
+    <Statics/>
     <Youtube/>
     <Benifits/>
     {/* <Testimonials/> */}

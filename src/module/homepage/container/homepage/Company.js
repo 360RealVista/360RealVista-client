@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import profile from "./../../../../assets/images/homepage/Live-GIF_V2-smaller_big text.gif";
+import profile from "../../../../assets/images/homepage/Lid.png"
 
 export default function Company() {
   return (
