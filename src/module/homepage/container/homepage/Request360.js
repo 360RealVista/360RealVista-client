@@ -22,7 +22,7 @@ export default function Request360Form({setOpen}) {
     const [service, setService] = React.useState(null);
     const [otherService, setOtherService] = React.useState(null);
     const [addField, setAddField] = React.useState(0);
-    const [isShowThanku, setIsShowThanku] = React.useState(true);
+    const [isShowThanku, setIsShowThanku] = React.useState(false);
 
 
 
