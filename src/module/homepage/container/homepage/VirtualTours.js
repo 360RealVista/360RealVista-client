@@ -51,6 +51,7 @@ export default function VirtualTours() {
 const Wrapper=styled.div`
 position: relative;
 background-image: linear-gradient(to bottom ,#8948F3,white);
+/* background-image: linear-gradient(to bottom ,#cdb2fa,white); */
 padding-bottom: 92px;
 .main{
     max-width: 1440px;
@@ -106,6 +107,7 @@ padding-bottom: 92px;
       display: flex;
       gap: 2vw;
       flex-direction: column;
+      background-image: linear-gradient(to bottom ,#cdb2fa,white);
 
 
       li {

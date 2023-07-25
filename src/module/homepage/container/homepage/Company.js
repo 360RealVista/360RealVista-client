@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import profile from "../../../../assets/images/homepage/Lid.png"
+import profile from "../../../../assets/images/homepage/Lid.png.png"
 
 export default function Company() {
   return (
