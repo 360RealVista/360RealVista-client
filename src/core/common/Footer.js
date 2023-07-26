@@ -19,12 +19,26 @@ export default function Footer() {
           <li>
             © 2023  360 Real Vista All rights reserved.
           </li>
+          <li className='flex-1'></li>
           <li>
 
-          <Link to="/privacy" onClick={()=>scrollTOId("privacyPolicy",70)}>
-          Privacy Policy
+          <Link to="/privacy" className='border-right'>
+          Privacy
           </Link>
           </li>
+          <li>
+            
+          <Link to="/terms" className='border-right'>
+           Terms 
+          </Link>
+          </li>
+          <li>
+            
+          <Link to="/cookies">
+          Cookies
+          </Link>
+          </li>
+          <li className='flex-1'></li>
 
           <li className='icon-text'>
           <div className='social'>
@@ -57,14 +71,15 @@ font-weight: 600;
       padding:  0 50px;
       display: flex;
       list-style: none;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       padding-top: 16px;
       align-items: center;
       &>li{
         display: flex;
         flex-direction: column;
         gap: 20px;
-
+        padding-right:12px ;
+        position: relative;
 
         .social{
           align-items: center;
@@ -83,6 +98,18 @@ font-weight: 600;
           transform: translate(-50%, 0px);
         }
     }
+    .border-right{
+      &::after{
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        height: 16px;
+        width: 2px;
+        background-color: black;
+      }
+    }
+
     
   
 

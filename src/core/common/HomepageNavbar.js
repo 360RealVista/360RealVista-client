@@ -18,9 +18,10 @@ export default function HomepageNavbar() {
       <Wrapper>
         <div className="main">
        
-        <NavLink
+        <NavLink 
+        to="/"
           className={({ isActive, isPending }) =>
-            true ? "pending" : isActive ? "active" : ""
+            true ? "" : isActive ? "" : ""
           }
         >
           <img className="logo" src={logo} />
