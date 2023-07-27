@@ -78,7 +78,7 @@ export default function Request360Form({setOpen}) {
       <>
       <Wrapper>
         <FormControl>
-          <Typography sx={{fontSize:"22px",marginBottom:"40px",marginTop:"-40px"}}>
+          <Typography onClick={()=>setOpen(false)} sx={{fontSize:"22px",marginBottom:"40px",marginTop:"-40px",cursor:"pointer"}}>
         Request 360 Site Visit
           </Typography>
           <form onSubmit={submitHandler}>

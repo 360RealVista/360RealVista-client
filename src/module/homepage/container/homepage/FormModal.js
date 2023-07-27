@@ -45,7 +45,7 @@ export default function TransitionsModal({open,setOpen}) {
         <Fade in={open}>
           <Box sx={style}>
             <Typography id="transition-modal-title" sx={{'display':"flex",'justifyContent':'space-between','alignItems':'center'}} variant="h6" component="h2">
-          <CloseIcon onClick={handleClose} />
+          <CloseIcon onClick={handleClose} sx={{cursor:"pointer"}} />
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
              <Form setOpen={setOpen}/>
